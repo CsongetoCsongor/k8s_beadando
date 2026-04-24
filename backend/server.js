@@ -4,7 +4,6 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
-<<<<<<< HEAD
 // Zenei "adatbázis" műfajok szerint
 const musicByGenre = {
   pop: "Taylor Swift - Anti-Hero",
@@ -12,16 +11,6 @@ const musicByGenre = {
   jazz: "Miles Davis - So What",
   techno: "Charlotte de Witte - Overdrive",
   classical: "Ludwig van Beethoven - Symphony No. 5"
-=======
-// Egyszerű "adatbázis"
-const oscars = {
-  2020: "Parasite",
-  2021: "Nomadland",
-  2022: "CODA",
-  2023: "Everything Everywhere All at Once",
-  2024: "Oppenheimer",
-  2025: "Anora"
->>>>>>> 039f9b5929a904d91c7eb1f00497f359e556cf9a
 };
 
 // Végpont, amely a műfaj alapján ad vissza egy zenét
