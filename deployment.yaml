@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: k8s-beadando-backend-container
-          image: ghcr.io/csongetocsongor/k8s_beadando-backend:1777018172
+          image: ghcr.io/csongetocsongor/k8s_beadando-backend:1777018505
           ports:
             - containerPort: 3000
       imagePullSecrets:
@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
         - name: k8s-beadando-frontend-container
-          image: ghcr.io/csongetocsongor/k8s_beadando-frontend:1777018351
+          image: ghcr.io/csongetocsongor/k8s_beadando-frontend:1777018505
           ports:
             - containerPort: 80
       imagePullSecrets:
