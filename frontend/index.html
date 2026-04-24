@@ -25,11 +25,13 @@
   <p id="result"></p>
 
   <script>
+    
     const select = document.getElementById("genreSelect");
     const result = document.getElementById("result");
 
     select.addEventListener("change", async () => {
-      const genre = select.value;
+      // Itt definiálod a 'genre' változót
+      const genre = select.value; 
 
       if (!genre) {
         result.innerText = "";
@@ -37,20 +39,21 @@
       }
 
       try {
-        const res = await fetch(`http://api-k8s-beadando-csongetocsongor.jcloud.jedlik.cloud/oscar/${year}`);
+        // HIBA VOLT: Itt valószínűleg ${year} maradt a ${genre} helyett
+        const res = await fetch(`http://api-k8s-beadando-csongetocsongor.jcloud.jedlik.cloud/music/${genre}`);
         const data = await res.json();
 
         if (data.error) {
           result.innerText = "Hiba: " + data.error;
         } else {
+          // HIBA VOLT: Itt is ${data.genre}-t kell használni a ${data.year} helyett
           result.innerText = `A választott műfaj (${data.genre}) egyik alapműve: ${data.track}`;
         }
       } catch (err) {
         result.innerText = "Nem sikerült elérni a szervert.";
-        console.error(err);
       }
     });
-  </script>
+      </script>
 
 </body>
 </html>
