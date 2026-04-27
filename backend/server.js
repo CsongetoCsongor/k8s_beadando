@@ -10,7 +10,8 @@ const musicByGenre = {
   rock: "AC/DC - Back In Black",
   jazz: "Miles Davis - So What",
   techno: "Charlotte de Witte - Overdrive",
-  classical: "Ludwig van Beethoven - Symphony No. 5"
+  classical: "Ludwig van Beethoven - Symphony No. 5",
+  metal: "lorem ipsum"
 };
 
 // Végpont, amely a műfaj alapján ad vissza egy zenét
